@@ -1,0 +1,88 @@
+let {
+    $clock = {
+        type = "clock"
+        format = "%a, %b %d  %H:%M"
+    }
+
+    $mpris = {
+        type = "music"
+        player_type = "mpris"
+    }
+
+    $tray = {
+        type = "tray"
+        icon_size = 16
+    }
+
+    $sysinfo = {
+        type = "sys_info"
+        interval.memory = 30
+        interval.cpu = 1
+        interval.temps = 5
+        interval.disks = 300
+        interval.networks = 3
+
+        format = [
+            " {cpu_percent}%"
+            " {memory_percent}%"
+            "󰓢 {net_down:wlp1s0} / {net_up:wlp1s0} Mbps"
+            "󰥔 {uptime}"
+        ]
+    }
+
+    $battery = {
+        type = "script"
+        mode = "poll"
+        name = "battery"
+        interval = 5000
+        cmd = "~/.config/ironbar/battery_script.sh"
+    }
+
+    $volume = {
+        type = "volume"
+        format = "{icon} {percentage}% ({name})"
+    }
+
+    $focused = {
+        type = "focused"
+        truncate = {
+            mode = "end"
+            max_length = 80
+        }
+        icon_size = 16
+        show_icon = false
+    }
+
+    $workspaces = {
+        type = "workspaces"
+        hidden = [
+            "special:scratch_volume"
+        ]
+    }
+
+    $start = [
+        $workspaces
+        $tray
+    ]
+    $center = [
+        // mpris is broken rn
+        // $mpris
+        $focused
+    ]
+    $end = [
+        $volume
+        $battery
+        $clock
+    ]
+} in {
+    position = "top"
+    height = 32
+    margin = {
+        left = 6
+        right = 6
+        top = 6
+    }
+    start = $start
+    center = $center
+    end = $end
+}

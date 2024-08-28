@@ -1,0 +1,10 @@
+[submodule "packages/.config/kitty/vim-kitty-navigator"]
+	path = packages/.config/kitty/vim-kitty-navigator
+	url = https://github.com/knubie/vim-kitty-navigator.git
+[submodule "packages/.config/hypr/catppuccin-theme"]
+	path = packages/.config/hypr/catppuccin-theme
+	url = https://github.com/catppuccin/hyprland
+[submodule "packages/.config/swaync/swaync-catppuccin"]
+	path = packages/.config/swaync/swaync-catppuccin
+	url = https://github.com/catppuccin/swaync
+	ignore = dirty

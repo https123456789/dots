@@ -1,0 +1,151 @@
+@import url("catppuccin.css");
+
+#bar {
+    font-family: "Fira Code Nerd Font", "Noto Sans Nerd Font", sans-serif;
+    font-size: 12px;
+    border: none;
+    border-radius: 0;
+}
+
+* {
+    padding: 0px;
+    color: @ctp-text;
+    box-shadow: none;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#center .focused {
+    background-color: @ctp-base;
+    padding: 5px 10px;
+    border: 2px solid @ctp-blue;
+    border-radius: 15px;
+}
+
+.workspaces {
+    background-color: transparent;
+    margin-right: 25px;
+}
+
+.workspaces .item {
+    background-color: transparent;
+    border: 2px solid @ctp-surface0;
+    margin-left: 2px;
+    margin-right: 2px;
+    transition: background-color 500ms;
+}
+
+.workspaces .item:first-child {
+    margin-left: 0px;
+}
+
+.workspaces .item:last-child {
+    margin-left: 0px;
+}
+
+.workspaces .item.focused {
+    background-color: @ctp-blue;
+}
+
+.tray {
+    all: unset;
+    background-color: @ctp-base;
+    border: 2px solid @ctp-surface0;
+    border-radius: 25px;
+    padding: 0px 10px;
+}
+
+.tray .item {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.tray .item > *:first-child * {
+    padding: 2px 0px;
+}
+
+.clock {
+    background-color: @ctp-base;
+    border: 2px solid @ctp-surface0;
+    border-radius: 25px;
+    padding: 0px 10px;
+    margin-left: 2px;
+}
+
+.popup-clock {
+    background-color: @ctp-base;
+    border: 2px solid @ctp-blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#battery {
+    background-color: @ctp-base;
+    border: 2px solid @ctp-surface0;
+    border-radius: 25px;
+    padding: 0px 10px;
+    margin: 0px 2px;
+}
+
+.sysinfo {
+    background-color: @ctp-base;
+    border: 2px solid @ctp-surface0;
+    border-radius: 25px;
+    padding: 0px 15px;
+    margin: 0px 2px;
+}
+
+.volume {
+    background-color: @ctp-base;
+    border: 2px solid @ctp-surface0;
+    border-radius: 25px;
+    padding: 0px 15px;
+    margin: 0px 2px;
+}
+
+.popup-volume {
+    background-color: transparent;
+    background-color: @ctp-base;
+    border: 2px solid @ctp-blue;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.popup-volume .device-box {
+}
+
+.popup-volume .device-box .device-selector * {
+    padding: 1px 1px;
+}
+
+.popup-volume .device-box .slider trough slider {
+    background-color: @ctp-blue;
+}
+
+.popup-volume .apps-box {
+    /* background-color: @ctp-base; */
+    /* border: 2px solid @ctp-blue; */
+    /* border-radius: 5px; */
+    /* padding: 10px; */
+}
+
+.popup-volume .apps-box .app-box {
+    margin: 5px 0px;
+}
+
+.popup-volume .apps-box .app-box .title {
+    margin-bottom: 5px;
+}
+
+.popup-volume .apps-box .app-box .btn-mute {
+    margin-top: 10px;
+}
+.popup-volume .apps-box .app-box .slider {
+    padding: 5px;
+}
+
+.popup-volume .apps-box .app-box .slider trough slider {
+    background-color: @ctp-blue;
+}
