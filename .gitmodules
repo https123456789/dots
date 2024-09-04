@@ -8,3 +8,7 @@
 	path = packages/.config/swaync/swaync-catppuccin
 	url = https://github.com/catppuccin/swaync
 	ignore = dirty
+[submodule "packages/nvim-config"]
+	path = packages/neovim
+	url = https://github.com/https123456789/nvim-config
+    ignore = dirty
