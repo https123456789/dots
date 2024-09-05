@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 pushd packages
-stow -t $HOME/.config .config -vv
-stow -t $HOME home -vv
-stow -t $HOME/.config/nvim neovim -vv
+stow -t $HOME/.config .config
+stow -t $HOME home
+
+mkdir -p $HOME/.config/nvim
+stow -t $HOME/.config/nvim neovim
 popd
