@@ -45,6 +45,7 @@ let {
 
     $focused = {
         type = "focused"
+        name = "focused"
         truncate = {
             mode = "end"
             max_length = 80
@@ -63,11 +64,11 @@ let {
     $start = [
         $workspaces
         $tray
+        $focused
     ]
     $center = [
         // mpris is broken rn
         // $mpris
-        $focused
     ]
     $end = [
         $volume

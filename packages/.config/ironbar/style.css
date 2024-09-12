@@ -17,16 +17,17 @@
     background-color: rgba(0, 0, 0, 0);
 }
 
-#center .focused {
+#focused {
     background-color: @ctp-base;
     padding: 5px 10px;
     border: 2px solid @ctp-blue;
     border-radius: 15px;
+    margin-left: 20px;
 }
 
 .workspaces {
     background-color: transparent;
-    margin-right: 25px;
+    margin-right: 15px;
 }
 
 .workspaces .item {
