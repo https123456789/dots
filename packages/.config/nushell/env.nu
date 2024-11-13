@@ -44,7 +44,8 @@ $env.TRANSIENT_PROMPT_INDICATOR = "> "
 $env.TRANSIENT_PROMPT_INDICATOR_VI_INSERT = {|| ": " }
 # $env.TRANSIENT_PROMPT_INDICATOR_VI_NORMAL = {|| "> " }
 # $env.TRANSIENT_PROMPT_MULTILINE_INDICATOR = {|| "" }
-$env.TRANSIENT_PROMPT_COMMAND_RIGHT = {|| current_timep }
+# $env.TRANSIENT_PROMPT_COMMAND_RIGHT = {|| current_timep }
+$env.TRANSIENT_PROMPT_COMMAND_RIGHT = ""
 
 # Specifies how environment variables are:
 # - converted from a string to a value on Nushell startup (from_string)
