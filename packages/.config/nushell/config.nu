@@ -32,6 +32,8 @@ $env.config = {
     ]
 }
 
-alias l = ls -amd
+alias l = ls -am
 alias nv = nvim
-alias z = zoxide
+alias lg = lazygit
+
+source ~/.zoxide.nu
