@@ -53,6 +53,8 @@ bindkey "^[[1;5D" backward-word
 
 bindkey -s '^o' 'zi\n'
 bindkey -s '^f' 'cd "$({fd --type d | fzf} || pwd)"\n'
+bindkey '^[k' up-line-or-history
+bindkey '^[j' down-line-or-history
 
 # Atuin
 eval "$(atuin init zsh --disable-up-arrow)"
