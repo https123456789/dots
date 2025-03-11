@@ -40,16 +40,16 @@ let {
 
     $volume = {
         type = "volume"
-        format = "{icon} {percentage}% ({name})"
+        format = "{percentage}% ({name})"
     }
 
     $focused = {
         type = "focused"
         name = "focused"
-        // truncate = {
-        //     mode = "end"
-        //     max_length = 100
-        // }
+        truncate = {
+            mode = "end"
+            max_length = 100
+        }
         icon_size = 16
         show_icon = false
     }

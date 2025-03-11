@@ -1,7 +1,7 @@
 @import url("catppuccin.css");
 
 #bar {
-    font-family: "Fira Code Nerd Font", "Noto Sans Nerd Font", sans-serif;
+    font-family: "Fira Code", "Noto Sans", sans-serif;
     font-size: 12px;
     border: none;
     border-radius: 0;
@@ -26,12 +26,12 @@
 }
 
 .workspaces {
-    background-color: transparent;
+    background-color: @ctp-base;
     margin-right: 15px;
 }
 
 .workspaces .item {
-    background-color: transparent;
+    background-color: @ctp-base;
     border: 2px solid @ctp-surface0;
     margin-left: 2px;
     margin-right: 2px;
