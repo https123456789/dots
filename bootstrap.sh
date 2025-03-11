@@ -62,4 +62,12 @@ sed -i -e 's/font-family: "Ubuntu Nerd Font";/font-family: "Fira Code Nerd Font"
 popd > /dev/null
 popd > /dev/null
 
+## Tmux ##
+
+stage_print "Tmux"
+
+substage_print "Cloning TPM"
+
+git clone https://github.com/tmux-plugins/tpm packages/home/.tmux/plugins/tpm
+
 stage_print "Done"

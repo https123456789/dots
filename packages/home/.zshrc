@@ -51,7 +51,7 @@ alias cat="bat"
 bindkey "^[[1;5C" forward-word
 bindkey "^[[1;5D" backward-word
 
-bindkey -s '^o' 'nvim $(fzf)\n'
+bindkey -s '^o' 'zi\n'
 bindkey -s '^f' 'cd "$({fd --type d | fzf} || pwd)"\n'
 
 # Atuin

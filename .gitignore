@@ -1,2 +1,4 @@
 packages/.config/ironbar/catppuccin.css
 packages/.config/swaync/style.css
+packages/home/.cargo/**/**
+!packages/home/.cargo/config.toml
